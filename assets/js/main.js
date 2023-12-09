@@ -29,9 +29,16 @@ searchClose.addEventListener('click', () =>{
 })
 
 /*=============== LOGIN ===============*/
-
+const login = document.querySelector('#login')
+const loginBtn = document.querySelector('#login-btn')
+const loginClose = document.querySelector('#login-close')
 
 /* Login show */
-
+loginBtn.addEventListener('click', () =>{
+    login.classList.add('show-login')
+})
 
 /* Login hidden */
+loginClose.addEventListener('click', () =>{
+    login.classList.remove('show-login')
+})
